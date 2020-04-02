@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+.navbar-logo-header {
+  background-color: #00aced;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 170px;
+  background-color: #222;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  word-wrap: break-word;
+}
+div.content {
+  margin-left: 154px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+.sidebar a {
+  display: block;
+  color: lightgrey;
+  padding: 16px;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  background-color: #555;
+  color: #fff;
+  border-radius: 5px;
+}
+/* Active/current link */
+.sidebar li.active {
+  background-color: #00aced;
+  color: #fff !important;
+  border-radius: 5px;
+}
+.navbar-nav li {
+  padding-right: 0px;
+  padding-left: 10px;
+}
+.btn-primary {
+  background-color: dodgerblue;
+  border: 1px solid dodgerblue;
+  border-radius: 10px;
+}
+.padding {
+  padding-bottom: 2rem;
+}
+.in-between-sections {
+  margin-left: 1em;
+}
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+ select {
+   border-radius: 5px;
+   border-color: dimgrey;
+ }
+.dropdown {
+  display: inline-block;
+}
+.dropdown-employer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.dropdown-date {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.times {
+  width: 75%;
+}
+.times-selection {
+  background-image: linear-gradient(to right, #00aced, white);
+  padding-left: 15px;
+}
+.selection-note {
+  font-size: 12px;
+  color: dimgrey;
+}
+.sub-fields {
+  font-size: 10px;
+}
+.times-2 {
+  width: 75%;
+  padding-bottom: 70px;
+  padding-top: 50px;
+}
+.select-day-area {
+  width: 60%;
+}
+.days-of-week {
+  font-size: 1rem;
+  font-weight: bold;
+  color: dimgrey;
+}
+.dates-to-select {
+  font-size: 0.8rem;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+@media (max-width: 576px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+

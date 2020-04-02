@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="wrapper">
+<div class="container-fluid sidebar sticky-sidebar">
+	<h3 class="navbar-logo-header">IWORK.CA</h3>
+	<div class="sidebar-content">
+		<ul class="navbar-nav ml-auto flex-column">
+			<li class="nav-item">
+				<a class="nav-link" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">My Schedule</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Pickup Shifts</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#">Edit Availability (Beta)</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Edit Profile (Beta)</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">My Inbox</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Send a Message</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Phone List</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Master Schedule</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Logout</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</div>
+
+<div class="content">
+<!--- Welcome Section -->
+<div class="container-fluid padding welcome">
+	<div class="dropdown-employer">
+		<select class="employer">
+			<option>ABC MultiSport Center (Employer)</option>
+		</select>
+		<button class="btn-primary">Go</button>
+	</div>
+	<div class="dropdown-date">
+		<select class="month">
+			<option>January</option>
+			<option>February</option>
+			<option>March</option>
+			<option>April</option>
+			<option>May</option>
+			<option>June</option>
+			<option>July</option>
+			<option>August</option>
+			<option>September</option>
+			<option>October</option>
+			<option>November</option>
+			<option>December</option>
+		</select>
+		<select class="year">
+			<option>2020</option>
+			<option>2021</option>
+		</select>
+		<button class="btn-primary">Switch</button>
+	</div>
+</div>
+
+<!--- Two Column Section -->
+<div class="container-fluid padding times">
+			<h6 class="times-selection">March 2020 Availability - select the times you are available for:</h6>
+	<br>
+	<p class="selection-note">(locked because month has passed)</p>
+	<div class="container-fluid">
+		<div class="row" align="center">
+			<div class="col-sm">
+					Sun
+			</div>
+			<div class="col-sm">
+					Mon
+			</div>
+			<div class="col-sm">
+					Tues
+			</div>
+			<div class="col-sm">
+				Wed
+			</div>
+			<div class="col-sm">
+				Thurs
+			</div>
+			<div class="col-sm">
+				Fri
+			</div>
+			<div class="col-sm">
+				Sat
+			</div>
+		</div>
+		<div class="row sub-fields">
+			<div class="col-sm">
+				<input type="checkbox" id="morningSun1" name="morningSun1" value="6:30-7:30am">
+				<label for="morningSun1"> 6:30-7:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningMon1" name="morningMon1" value="6:30-7:30am">
+				<label for="morningMon1"> 6:30-7:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningTues1" name="morningTues1" value="6:30-7:30am">
+				<label for="morningTues1"> 6:30-7:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningWed1" name="morningWed1" value="6:30-7:30am">
+				<label for="morningWed1"> 6:30-7:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningThurs1" name="morningThurs1" value="6:30-7:30am">
+				<label for="morningThurs1"> 6:30-7:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningFri1" name="morningFri1" value="6:30-7:30am">
+				<label for="morningFri1"> 6:30-7:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningSat1" name="morningSat1" value="6:30-7:30am">
+				<label for="morningSat1"> 6:30-7:30am</label><br>
+			</div>
+		</div>
+		<div class="row sub-fields">
+			<div class="col-sm">
+				<input type="checkbox" id="morningSun2" name="morningSun2" value="7:30-8:30am">
+				<label for="morningSun2"> 7:30-8:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningMon2" name="morningMon2" value="7:30-8:30am">
+				<label for="morningMon2"> 7:30-8:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningTues2" name="morningTues2" value="7:30-8:30am">
+				<label for="morningTues2">7:30-8:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningWed2" name="morningWed2" value="7:30-8:30am">
+				<label for="morningWed2"> 7:30-8:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningThurs2" name="morningThurs2" value="7:30-8:30am">
+				<label for="morningThurs2"> 7:30-8:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningFri2" name="morningFri2" value="7:30-8:30am">
+				<label for="morningFri2">7:30-8:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningSat2" name="morningSat2" value="7:30-8:30am">
+				<label for="morningSat2"> 7:30-8:30am</label><br>
+			</div>
+		</div>
+		<div class="row sub-fields">
+			<div class="col-sm">
+				<input type="checkbox" id="morningSun3" name="morningSun3" value="8:30-9:30am">
+				<label for="morningSun3"> 8:30-9:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningMon3" name="morningMon3" value="8:30-9:30am">
+				<label for="morningMon3"> 8:30-9:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningTues3" name="morningTues3" value="8:30-9:30am">
+				<label for="morningTues3">8:30-9:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningWed3" name="morningWed3" value="8:30-9:30am">
+				<label for="morningWed3"> 8:30-9:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningThurs3" name="morningThurs3" value="8:30-9:30am">
+				<label for="morningThurs3"> 8:30-9:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningFri3" name="morningFri3" value="8:30-9:30am">
+				<label for="morningFri3">8:30-9:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningSat3" name="morningSat3" value="8:30-9:30am">
+				<label for="morningSat3"> 8:30-9:30am</label><br>
+			</div>
+		</div>
+		<div class="row sub-fields">
+			<div class="col-sm">
+				<input type="checkbox" id="morningSun4" name="morningSun4" value="9:30-10:30am">
+				<label for="morningSun4">9:30-10:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningMon4" name="morningMon4" value="9:30-10:30am">
+				<label for="morningMon4"> 9:30-10:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningTues4" name="morningTues4" value="9:30-10:30am">
+				<label for="morningTues4">9:30-10:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningWed4" name="morningWed4" value="9:30-10:30am">
+				<label for="morningWed4"> 9:30-10:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningThurs4" name="morningThurs4" value="9:30-10:30am">
+				<label for="morningThurs4"> 9:30-10:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningFri4" name="morningFri4" value="9:30-10:30am">
+				<label for="morningFri4">9:30-10:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningSat4" name="morningSat4" value="9:30-10:30am">
+				<label for="morningSat4"> 9:30-10:30am</label><br>
+			</div>
+		</div>
+		<div class="row sub-fields">
+			<div class="col-sm">
+				<input type="checkbox" id="morningSun5" name="morningSun5" value="10:30-11:30am">
+				<label for="morningSun5">10:30-11:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningMon5" name="morningMon5" value="10:30-11:30am">
+				<label for="morningMon5"> 10:30-11:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningTues5" name="morningTues5" value="10:30-11:30am">
+				<label for="morningTues5">10:30-11:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningWed5" name="morningWed5" value="10:30-11:30am">
+				<label for="morningWed5"> 10:30-11:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningThurs5" name="morningThurs5" value="10:30-11:30am">
+				<label for="morningThurs5">10:30-11:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningFri5" name="morningFri5" value="10:30-11:30am">
+				<label for="morningFri5">10:30-11:30am</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningSat5" name="morningSat5" value="10:30-11:30am">
+				<label for="morningSat5">10:30-11:30am</label><br>
+			</div>
+		</div>
+		<div class="row sub-fields">
+			<div class="col-sm">
+				<input type="checkbox" id="morningSun6" name="morningSun6" value="11:30-12:30pm">
+				<label for="morningSun6">11:30-12:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningMon6" name="morningMon6" value="11:30-12:30pm">
+				<label for="morningMon6"> 11:30-12:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningTues6" name="morningTues6" value="11:30-12:30pm">
+				<label for="morningTues6">11:30-12:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningWed6" name="morningWed6" value="11:30-12:30pm">
+				<label for="morningWed6"> 11:30-12:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningThurs6" name="morningThurs6" value="11:30-12:30pm">
+				<label for="morningThurs6">11:30-12:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningFri6" name="morningFri6" value="11:30-12:30pm">
+				<label for="morningFri6">11:30-12:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningSat6" name="morningSat6" value="11:30-12:30pm">
+				<label for="morningSat6">11:30-12:30pm</label><br>
+			</div>
+		</div>
+		<div class="row sub-fields">
+			<div class="col-sm">
+				<input type="checkbox" id="morningSun7" name="morningSun7" value="12:30-1:30pm">
+				<label for="morningSun7">12:30-1:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningMon7" name="morningMon7" value="12:30-1:30pm">
+				<label for="morningMon7"> 12:30-1:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningTues7" name="morningTues7" value="12:30-1:30pm">
+				<label for="morningTues7">12:30-1:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningWed7" name="morningWed7" value="12:30-1:30pm">
+				<label for="morningWed7">12:30-1:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningThurs7" name="morningThurs7" value="12:30-1:30pm">
+				<label for="morningThurs7">12:30-1:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningFri7" name="morningFri7" value="12:30-1:30pm">
+				<label for="morningFri7">12:30-1:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningSat7" name="morningSat7" value="12:30-1:30pm">
+				<label for="morningSat7">12:30-1:30pm</label><br>
+			</div>
+		</div>
+		<div class="row sub-fields">
+			<div class="col-sm">
+				<input type="checkbox" id="morningSun8" name="morningSun8" value="1:30-2:30pm">
+				<label for="morningSun8">1:30-2:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningMon8" name="morningMon8" value="1:30-2:30pm">
+				<label for="morningMon8"> 1:30-2:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningTues8" name="morningTues8" value="1:30-2:30pm">
+				<label for="morningTues8">1:30-2:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningWed8" name="morningWed8" value="1:30-2:30pm">
+				<label for="morningWed8">1:30-2:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningThurs8" name="morningThurs8" value="1:30-2:30pm">
+				<label for="morningThurs8">1:30-2:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningFri8" name="morningFri8" value="1:30-2:30pm">
+				<label for="morningFri8">1:30-2:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningSat8" name="morningSat8" value="1:30-2:30pm">
+				<label for="morningSat8">1:30-2:30pm</label><br>
+			</div>
+		</div>
+		<div class="row sub-fields">
+			<div class="col-sm">
+				<input type="checkbox" id="morningSun9" name="morningSun9" value="2:30-3:30pm">
+				<label for="morningSun9">2:30-3:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningMon9" name="morningMon9" value="2:30-3:30pm">
+				<label for="morningMon9">2:30-3:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningTues9" name="morningTues9" value="2:30-3:30pm">
+				<label for="morningTues9">2:30-3:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningWed9" name="morningWed9" value="2:30-3:30pm">
+				<label for="morningWed9">2:30-3:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningThurs9" name="morningThurs9" value="2:30-3:30pm">
+				<label for="morningThurs9">2:30-3:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningFri9" name="morningFri9" value="2:30-3:30pm">
+				<label for="morningFri9">2:30-3:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningSat9" name="morningSat9" value="2:30-3:30pm">
+				<label for="morningSat9">2:30-3:30pm</label><br>
+			</div>
+		</div>
+		<div class="row sub-fields">
+			<div class="col-sm">
+				<input type="checkbox" id="morningSun10" name="morningSun10" value="3:30-4:30pm">
+				<label for="morningSun10">3:30-4:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningMon10" name="morningMon10" value="3:30-4:30pm">
+				<label for="morningMon10">3:30-4:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningTues10" name="morningTues10" value="3:30-4:30pm">
+				<label for="morningTues10">3:30-4:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningWed10" name="morningWed10" value="3:30-4:30pm">
+				<label for="morningWed10">3:30-4:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningThurs10" name="morningThurs10" value="3:30-4:30pm">
+				<label for="morningThurs10">3:30-4:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningFri10" name="morningFri10" value="3:30-4:30pm">
+				<label for="morningFri10">3:30-4:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningSat10" name="morningSat10" value="3:30-4:30pm">
+				<label for="morningSat10">3:30-4:30pm</label><br>
+			</div>
+		</div>
+		<div class="row sub-fields">
+			<div class="col-sm">
+				<input type="checkbox" id="morningSun11" name="morningSun11" value="4:30-5:30pm">
+				<label for="morningSun11">4:30-5:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningMon11" name="morningMon11" value="4:30-5:30pm">
+				<label for="morningMon11">4:30-5:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningTues11" name="morningTues11" value="4:30-5:30pm">
+				<label for="morningTues11">4:30-5:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningWed11" name="morningWed11" value="4:30-5:30pm">
+				<label for="morningWed11">4:30-5:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningThurs11" name="morningThurs11" value="4:30-5:30pm">
+				<label for="morningThurs11">4:30-5:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningFri11" name="morningFri11" value="4:30-5:30pm">
+				<label for="morningFri11">4:30-5:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningSat11" name="morningSat11" value="4:30-5:30pm">
+				<label for="morningSat11">4:30-5:30pm</label><br>
+			</div>
+		</div>
+		<div class="row sub-fields">
+			<div class="col-sm">
+				<input type="checkbox" id="morningSun12" name="morningSun12" value="5:30-6:30pm">
+				<label for="morningSun12">5:30-6:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningMon12" name="morningMon12" value="5:30-6:30pm">
+				<label for="morningMon12">5:30-6:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningTues12" name="morningTues12" value="5:30-6:30pm">
+				<label for="morningTues12">5:30-6:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningWed12" name="morningWed12" value="5:30-6:30pm">
+				<label for="morningWed12">5:30-6:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningThurs12" name="morningThurs12" value="5:30-6:30pm">
+				<label for="morningThurs12">5:30-6:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningFri12" name="morningFri12" value="5:30-6:30pm">
+				<label for="morningFri12">5:30-6:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningSat12" name="morningSat12" value="5:30-6:30pm">
+				<label for="morningSat12">5:30-6:30pm</label><br>
+			</div>
+		</div>
+		<div class="row sub-fields">
+			<div class="col-sm">
+				<input type="checkbox" id="morningSun13" name="morningSun13" value="6:30-7:30pm">
+				<label for="morningSun13">6:30-7:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningMon13" name="morningMon13" value="6:30-7:30pm">
+				<label for="morningMon13">6:30-7:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningTues13" name="morningTues13" value="6:30-7:30pm">
+				<label for="morningTues13">6:30-7:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningWed13" name="morningWed13" value="6:30-7:30pm">
+				<label for="morningWed13">6:30-7:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningThurs13" name="morningThurs13" value="6:30-7:30pm">
+				<label for="morningThurs13">6:30-7:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningFri13" name="morningFri13" value="6:30-7:30pm">
+				<label for="morningFri13">6:30-7:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningSat13" name="morningSat13" value="6:30-7:30pm">
+				<label for="morningSat13">6:30-7:30pm</label><br>
+			</div>
+		</div>
+		<div class="row sub-fields">
+			<div class="col-sm">
+				<input type="checkbox" id="morningSun14" name="morningSun14" value="7:30-8:30pm">
+				<label for="morningSun14">7:30-8:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningMon14" name="morningMon14" value="7:30-8:30pm">
+				<label for="morningMon14">7:30-8:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningTues14" name="morningTues14" value="7:30-8:30pm">
+				<label for="morningTues14">7:30-8:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningWed14" name="morningWed14" value="7:30-8:30pm">
+				<label for="morningWed14">7:30-8:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningThurs14" name="morningThurs14" value="7:30-8:30pm">
+				<label for="morningThurs14">7:30-8:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningFri14" name="morningFri14" value="7:30-8:30pm">
+				<label for="morningFri14">7:30-8:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningSat14" name="morningSat14" value="7:30-8:30pm">
+				<label for="morningSat14">7:30-8:30pm</label><br>
+			</div>
+		</div>
+		<div class="row sub-fields">
+			<div class="col-sm">
+				<input type="checkbox" id="morningSun15" name="morningSun15" value="8:30-9:30pm">
+				<label for="morningSun15">8:30-9:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningMon15" name="morningMon15" value="8:30-9:30pm">
+				<label for="morningMon15">8:30-9:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningTues15" name="morningTues15" value="8:30-9:30pm">
+				<label for="morningTues15">8:30-9:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningWed15" name="morningWed15" value="8:30-9:30pm">
+				<label for="morningWed15">8:30-9:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningThurs15" name="morningThurs15" value="8:30-9:30pm">
+				<label for="morningThurs15">8:30-9:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningFri15" name="morningFri15" value="8:30-9:30pm">
+				<label for="morningFri15">8:30-9:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningSat15" name="morningSat15" value="8:30-9:30pm">
+				<label for="morningSat15">8:30-9:30pm</label><br>
+			</div>
+		</div>
+		<div class="row sub-fields">
+			<div class="col-sm">
+				<input type="checkbox" id="morningSun16" name="morningSun16" value="9:30-10:30pm">
+				<label for="morningSun16">9:30-10:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningMon16" name="morningMon16" value="9:30-10:30pm">
+				<label for="morningMon16">9:30-10:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningTues16" name="morningTues16" value="9:30-10:30pm">
+				<label for="morningTues16">9:30-10:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningWed16" name="morningWed16" value="9:30-10:30pm">
+				<label for="morningWed16">9:30-10:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningThurs16" name="morningThurs16" value="9:30-10:30pm">
+				<label for="morningThurs16">9:30-10:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningFri16" name="morningFri16" value="9:30-10:30pm">
+				<label for="morningFri16">9:30-10:30pm</label><br>
+			</div>
+			<div class="col-sm">
+				<input type="checkbox" id="morningSat16" name="morningSat16" value="9:30-10:30pm">
+				<label for="morningSat16">9:30-10:30pm</label><br>
+			</div>
+		</div>
+	</div>
+</div>
+
+<hr class="in-between-sections">
+
+<!--- Selection Field 2 -->
+<div class="container-fluid padding times-2">
+	<h6 class="times-selection">Select the days you cannot work:</h6>
+	<br>
+	<div class="select-day-area">
+	<div class="container-fluid">
+		<div class="row days-of-week" align="center">
+			<div class="col-sm">
+				Sun
+			</div>
+			<div class="col-sm">
+				Mon
+			</div>
+			<div class="col-sm">
+				Tues
+			</div>
+			<div class="col-sm">
+				Wed
+			</div>
+			<div class="col-sm">
+				Thurs
+			</div>
+			<div class="col-sm">
+				Fri
+			</div>
+			<div class="col-sm">
+				Sat
+			</div>
+		</div>
+	</div>
+	<div class="row sub-fields dates-to-select" align="center">
+		<div class="col-sm">
+			<label for="1"> 1</label><br>
+			<input type="checkbox" id="1" name="1" value="1">
+		</div>
+		<div class="col-sm">
+			<label for="2"> 2</label><br>
+			<input type="checkbox" id="2" name="2" value="2">
+		</div>
+		<div class="col-sm">
+			<label for="3"> 3</label><br>
+			<input type="checkbox" id="3" name="3" value="3">
+		</div>
+		<div class="col-sm">
+			<label for="4"> 4</label><br>
+			<input type="checkbox" id="4" name="4" value="4">
+		</div>
+		<div class="col-sm">
+			<label for="5"> 5</label><br>
+			<input type="checkbox" id="5" name="5" value="5">
+		</div>
+		<div class="col-sm">
+			<label for="6"> 6</label><br>
+			<input type="checkbox" id="6" name="6" value="6">
+		</div>
+		<div class="col-sm">
+			<label for="7"> 7</label><br>
+			<input type="checkbox" id="7" name="7" value="7">
+		</div>
+	</div>
+	<div class="row sub-fields dates-to-select" align="center">
+		<div class="col-sm">
+			<label for="8"> 8</label><br>
+			<input type="checkbox" id="8" name="8" value="8">
+		</div>
+		<div class="col-sm">
+			<label for="9"> 9</label><br>
+			<input type="checkbox" id="9" name="9" value="9">
+		</div>
+		<div class="col-sm">
+			<label for="10"> 10</label><br>
+			<input type="checkbox" id="10" name="10" value="10">
+		</div>
+		<div class="col-sm">
+			<label for="11"> 11</label><br>
+			<input type="checkbox" id="11" name="11" value="11">
+		</div>
+		<div class="col-sm">
+			<label for="12"> 12</label><br>
+			<input type="checkbox" id="12" name="12" value="12">
+		</div>
+		<div class="col-sm">
+			<label for="13"> 13</label><br>
+			<input type="checkbox" id="13" name="13" value="13">
+		</div>
+		<div class="col-sm">
+			<label for="14"> 14</label><br>
+			<input type="checkbox" id="14" name="14" value="14">
+		</div>
+	</div>
+	<div class="row sub-fields dates-to-select" align="center">
+		<div class="col-sm">
+			<label for="15"> 15</label><br>
+			<input type="checkbox" id="15" name="15" value="15">
+		</div>
+		<div class="col-sm">
+			<label for="16"> 16</label><br>
+			<input type="checkbox" id="16" name="16" value="16">
+		</div>
+		<div class="col-sm">
+			<label for="17"> 17</label><br>
+			<input type="checkbox" id="17" name="17" value="17">
+		</div>
+		<div class="col-sm">
+			<label for="18"> 18</label><br>
+			<input type="checkbox" id="18" name="18" value="18">
+		</div>
+		<div class="col-sm">
+			<label for="19"> 19</label><br>
+			<input type="checkbox" id="19" name="19" value="19">
+		</div>
+		<div class="col-sm">
+			<label for="20"> 20</label><br>
+			<input type="checkbox" id="20" name="20" value="20">
+		</div>
+		<div class="col-sm">
+			<label for="21"> 21</label><br>
+			<input type="checkbox" id="21" name="21" value="21">
+		</div>
+	</div>
+	<div class="row sub-fields dates-to-select" align="center">
+		<div class="col-sm">
+			<label for="22"> 22</label><br>
+			<input type="checkbox" id="22" name="22" value="22">
+		</div>
+		<div class="col-sm">
+			<label for="23"> 23</label><br>
+			<input type="checkbox" id="23" name="23" value="23">
+		</div>
+		<div class="col-sm">
+			<label for="24"> 24</label><br>
+			<input type="checkbox" id="24" name="24" value="24">
+		</div>
+		<div class="col-sm">
+			<label for="25"> 25</label><br>
+			<input type="checkbox" id="25" name="25" value="25">
+		</div>
+		<div class="col-sm">
+			<label for="26"> 26</label><br>
+			<input type="checkbox" id="26" name="26" value="26">
+		</div>
+		<div class="col-sm">
+			<label for="27"> 27</label><br>
+			<input type="checkbox" id="27" name="27" value="27">
+		</div>
+		<div class="col-sm">
+			<label for="28"> 28</label><br>
+			<input type="checkbox" id="28" name="28" value="28">
+		</div>
+	</div>
+	<div class="row sub-fields dates-to-select" align="center">
+		<div class="col-sm">
+			<label for="29"> 29</label><br>
+			<input type="checkbox" id="29" name="29" value="29">
+		</div>
+		<div class="col-sm">
+			<label for="30"> 30</label><br>
+			<input type="checkbox" id="30" name="30" value="30">
+		</div>
+		<div class="col-sm">
+			<label for="31"> 31</label><br>
+			<input type="checkbox" id="31" name="31" value="31">
+		</div>
+		<div class="col-sm">
+		</div>
+		<div class="col-sm">
+		</div>
+		<div class="col-sm">
+		</div>
+		<div class="col-sm">
+		</div>
+	</div>
+	</div>
+</div>
+
+</div>
+
+
+</body>
+</html>
